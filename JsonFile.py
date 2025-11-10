@@ -16,7 +16,7 @@ class JsonFile(File):
         json_arr = self.convert_to_json(arr)
 
         with open(self.file_name, 'w') as f:
-            json.dumps(json_arr)
+            f.write(json.dumps(json_arr))
 
     def convert_to_json(self, arr):
         return [obj.__dict__() for obj in arr]
