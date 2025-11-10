@@ -1,6 +1,7 @@
 from File import File
 import json
 
+
 class JsonFile(File):
 
     def __init__(self, file_name):
