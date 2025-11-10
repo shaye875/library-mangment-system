@@ -8,6 +8,6 @@ class File(ABC):
         pass
 
     @abstractmethod
-    def write(self):
+    def write(self, data):
         pass
 
