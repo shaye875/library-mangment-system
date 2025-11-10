@@ -27,7 +27,6 @@ class User:
     def set_user_id(self, user_id):
         self.__user_id = user_id
 
-
     def add_book(self, book):
         self.__borrowed_books.append(book)
 
