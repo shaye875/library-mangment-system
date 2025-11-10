@@ -9,7 +9,7 @@ class JsonFile(File):
 
     def read(self):
         with open(self.file_name, 'r') as f:
-            json_data = json.loads(self.file_name)
+            json_data = json.loads(f.read())
             return json_data
 
     def write(self, arr):
