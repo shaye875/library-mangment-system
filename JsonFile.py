@@ -11,6 +11,7 @@ class JsonFile(File):
     def read(self):
         with open(self.file_name, 'r') as f:
             json_data = json.loads(self.file_name)
+            return json_data
 
     def write(self, arr):
         json_arr = self.convert_to_json(arr)
