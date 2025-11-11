@@ -1,4 +1,4 @@
-from File import File
+from File.File import File
 import json
 
 
