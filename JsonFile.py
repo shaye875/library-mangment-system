@@ -19,7 +19,7 @@ class JsonFile(File):
             f.write(json.dumps(json_arr))
 
     def convert_to_json(self, arr):
-        return [obj.__dict__() for obj in arr]
+        return [obj.to_dictionary() for obj in arr]
 
 
 

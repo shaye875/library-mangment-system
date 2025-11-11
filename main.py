@@ -12,6 +12,8 @@ if __name__ == "__main__":
     library.add_user(user)
     library.add_book(book)
 
+    user.add_book(book)
+
     jsonFile = JsonFile("temp.txt")
     jsonFile.write(library.users)
 
