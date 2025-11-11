@@ -26,4 +26,4 @@ class Book:
         self.__is_available = type
 
     def __str__(self):
-        return f"the title {self.__title} of {self.__author} the isbn is {self.__isbn} and this is available?:\n{self.__is_available}"
+        return f"the title {self.__title}, of {self.__author}, the isbn is {self.__isbn}, and this is available?:{self.__is_available}"
