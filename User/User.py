@@ -16,7 +16,7 @@ class User:
 
     @property
     def user_id(self):
-        return self.user_id
+        return self.__user_id
 
     def set_borrowed_books(self, books):
         self.__borrowed_books = books

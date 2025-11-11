@@ -1,5 +1,3 @@
-
-
 class Book:
     def __init__(self,title,author,isbn,is_available=True):
 
