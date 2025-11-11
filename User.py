@@ -27,7 +27,6 @@ class User:
     def set_user_id(self, user_id):
         self.__user_id = user_id
 
-
     def add_book(self, book):
         self.__borrowed_books.append(book)
 
@@ -40,4 +39,7 @@ class User:
             "user_id" : self.__user_id,
             "books" : [book.to_dictionary() for book in self.__borrowed_books]
         }
+
+    def __str__(self):
+        return f"user name {self.__name}, user id {self.__user_id}"
 
