@@ -14,6 +14,7 @@ if __name__ == "__main__":
 
     user.add_book(book)
 
-    jsonFile = JsonFile("temp.txt")
-    jsonFile.write(library.users)
+
+    JsonFile.write("temp.txt", library.users)
+    print(JsonFile.read("temp.txt"))
 
