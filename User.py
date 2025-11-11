@@ -40,3 +40,6 @@ class User:
             "books" : [book.to_dictionary() for book in self.__borrowed_books]
         }
 
+    def __str__(self):
+        return f"user name {self.__name}, user id {self.__user_id}"
+
