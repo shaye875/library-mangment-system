@@ -33,3 +33,10 @@ class User:
     def return_book(self, book):
         self.__borrowed_books.remove(book)
 
+    def to_dictionary(self):
+        return {
+            "name" : self.__name,
+            "user_id" : self.__user_id,
+            "books" : [book.to_dictionary() for book in self.__borrowed_books]
+        }
+
