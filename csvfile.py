@@ -2,13 +2,12 @@ from book import *
 from User import *
 class Csvfile:
     @staticmethod
-    def write(books_or_user):
-        name = input("what file name\n")
+    def write(books_or_user,file_name):
         str = ""
         for book in books_or_user:
             str += book.__str__()
             str += '\n'
-        with open(f'{name}.csv','w') as f:
+        with open(f'{file_name}.csv','w') as f:
             f.write(str)
     @staticmethod
     def read(file):
