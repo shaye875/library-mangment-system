@@ -1,5 +1,6 @@
-from book import *
-from User import *
+from Book.book import *
+from User.User import *
+
 class Csvfile:
     @staticmethod
     def write(books_or_user):

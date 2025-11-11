@@ -1,5 +1,5 @@
-from User import *
-from book import *
+from Book.book import *
+
 class Library:
     def __init__(self):
         self.books = []
