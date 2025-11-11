@@ -1,8 +1,9 @@
-from library import Library
-from User import User
-from book import Book
-from JsonFile import JsonFile
-from csvfile import *
+from Library.library import Library
+from User.User import User
+from Book.book import Book
+from File.JsonFile import JsonFile
+from File.csvfile import *
+
 if __name__ == "__main__":
 
     library = Library()
