@@ -2,7 +2,7 @@ from library import Library
 from User import User
 from book import Book
 from JsonFile import JsonFile
-
+from csvfile import *
 if __name__ == "__main__":
 
     library = Library()
@@ -15,6 +15,9 @@ if __name__ == "__main__":
     user.add_book(book)
 
 
-    JsonFile.write("temp.txt", library.users)
-    print(JsonFile.read("temp.txt"))
+    JsonFile.write("users.json", library.users)
+    Csvfile.write(library.users)
+
+
+
 
